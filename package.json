@@ -1,15 +1,27 @@
 {
-  "name": "5app-coding-challenge",
-  "version": "0.0.0",
-  "description": "The 5app developer challenge",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/5app/5app-coding-challenge.git"
+  "name": "5app",
+  "version": "1.0.0",
+  "description": "sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "semistandard --fix && mocha"
   },
-  "author": "Andrew Dodson <andrew@5app.com>",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/5app/5app-coding-challenge/issues"
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "lodash": "^4.17.11"
   },
-  "homepage": "https://github.com/5app/5app-coding-challenge#readme"
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "semistandard": "^13.0.1",
+    "supertest": "^4.0.2"
+  },
+  "semistandard": {
+    "env": [
+      "mocha"
+    ]
+  }
 }
